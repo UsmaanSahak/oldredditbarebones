@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 1,
+  "name": "oldReddit",
+  "version": "1.0",
+
+  "description": "Redirects to old reddit.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["timeMachine.js"]
+    }
+  ]
+
+}
